@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="light" onclick="lightMood()">Day</div>
     <div id= "container">
         <div id="display">
 
@@ -15,57 +16,63 @@
         <div class="r-display" id="rdisplay"  onclick="rDisplat()">
             
         </div>
-        <div id="buttons">
-            <div class="button b-zero" onclick="bZero()">
-                0
-            </div>
-            <div class="button b-one" onclick="bOne()">
-                1
-            </div>
-            <div class="button b-two" onclick="bTwo()">
-                2
-            </div>
-            <div class="button b-three" onclick="bThree()">
-                3
-            </div>
-            <div class="button b-four" onclick="bFour()">
-                4
-            </div>
-            <div class="button b-five" onclick="bFive()">
-                5
-            </div>
-            <div class="button b-six" onclick="bSix()">
-                6
-            </div>
-            <div class="button b-seven" onclick="bSeven()">
-                7
-            </div>
-            <div class="button b-eight" onclick="bEight()">
-                8
-            </div>
-            <div class="button b-nine" onclick="bNine()">
-                9
-            </div>
-            <div class="button b-plus" onclick="bPlus()">
-                +
-            </div>
-            <div class="button b-minus" onclick="bMinus()">
-                -
-            </div>
-            <div class="button b-multiply" onclick="bMultiply()">
-                *
-            </div>
-            <div class="button b-div" onclick="bDivide()">
-                /
-            </div>
-            <div class="button b-result" onclick="bResult()">
-                =
-            </div>
+        <div class="actions">
             <div class="button b-clear" onclick="bClear()">
                 Clear
             </div>
-    </div>
-
+        </div>
+        
+        <div id="buttons">
+            <div class="number">
+                <div class="button b-seven" onclick="bSeven()">
+                    7
+                </div>
+                <div class="button b-eight" onclick="bEight()">
+                    8
+                </div>
+                <div class="button b-nine" onclick="bNine()">
+                    9
+                </div>
+                <div class="button b-four" onclick="bFour()">
+                    4
+                </div>
+                <div class="button b-five" onclick="bFive()">
+                    5
+                </div>
+                <div class="button b-six" onclick="bSix()">
+                    6
+                </div>
+                <div class="button b-one" onclick="bOne()">
+                    1
+                </div>
+                <div class="button b-two" onclick="bTwo()">
+                    2
+                </div>
+                <div class="button b-three" onclick="bThree()">
+                    3
+                </div>    
+                <div class="button b-zero" onclick="bZero()">
+                    0
+                </div>            
+            </div>
+            <div class="operators">
+                <div class="button b-plus" onclick="bPlus()">
+                    +
+                </div>
+                <div class="button b-minus" onclick="bMinus()">
+                    -
+                </div>
+                <div class="button b-multiply" onclick="bMultiply()">
+                    *
+                </div>
+                <div class="button b-div" onclick="bDivide()">
+                    /
+                </div>
+                <div class="button b-result" onclick="bResult()">
+                    =
+                </div>
+            </div>
+        </div>
 
 
 

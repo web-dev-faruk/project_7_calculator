@@ -1,3 +1,17 @@
+function lightMood(){
+    let lightButton= document.getElementById("light");
+    let buttonText= document.getElementById("light").innerHTML;
+    let textLength= buttonText.length;
+    if(textLength==3) {
+        lightButton.innerHTML='Night';
+        document.getElementsByTagName('body')[0].style.backgroundColor='#160317';
+    }
+    else if(textLength==5) {
+        lightButton.innerHTML='Day';
+        document.getElementsByTagName('body')[0].style.backgroundColor='rgb(215, 233, 255)';
+    }
+}
+
 let display=document.getElementById('display');
 let rdisplay=document.getElementById('rdisplay');
 const getFirstNumber=[];
@@ -240,6 +254,7 @@ function bDivide(){
 
 // result
 function bResult(){
+    
 if (operatorArray[0]=='plus') {
     operatorArray.pop();
     display.innerHTML='';
@@ -252,7 +267,7 @@ if (operatorArray[0]=='plus') {
 
         finalNumbers[0]=equalResult;
         finalNumbers.pop();
-        console.log(finalNumbers[0]);
+        console.log(finalNumbers);
         
         // clear getFirstNumber after click +
         while (getFirstNumber.length >=1) {
@@ -320,6 +335,9 @@ else if (operatorArray[0]=='divide') {
     }
     }
 }
+    while(operatorArray.length>0){
+        operatorArray.pop();
+    }
 
 }
 
@@ -332,6 +350,10 @@ function bClear(){
     while(finalNumbers.length>=1){
         finalNumbers.pop();
     }
+    while(operatorArray.length>0){
+        operatorArray.pop();
+    }
+    
     display.innerHTML='';
     rdisplay.innerHTML='';
     console.log(getFirstNumber);
